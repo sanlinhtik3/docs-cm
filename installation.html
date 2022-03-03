@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/colormyar/css/pdf.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/highlight.js/styles/default.css">
+    <link rel="stylesheet" href="node_modules/highlight.js/styles/monokai-sublime.css">
+    <link rel="stylesheet" href="access/dist/css/cus.css">
+</head>
+<body>
+<div class="alert alert-primary text-center py-2 mb-0" role="alert">
+    Support Myanmar 🇲🇲 <a href="#">Help Provide Humanitarian Aid to Myanmar</a>.
+</div>
+<nav class="position-sticky top-0 w-100 px-3 px-lg-5 py-3 border-bottom cus-nav">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="ps-lg-4 d-flex justify-content-start align-items-center">
+            <div class="me-lg-2">
+                <span class="fw-bold">Color Myar</span>
+                <span class="badge rounded-pill px-2 pdf-bg-gray-50 pdf-text-neutral-500">v1.0.1</span>
+            </div>
+            <span class="d-none d-lg-inline-block fw-bold badge rounded-pill px-2 pdf-bg-blue-50 pdf-text-blue-500 border pdf-border-blue-500">Color Myar CSS v1.0.0</span>
+        </div>
+        <div class="d-block d-lg-none">
+            <i class="fas fa-search fa-fw me-3"></i>
+            <i class="fas fa-ellipsis-v fa-fw"></i>
+        </div>
+        <div class="pe-lg-4 d-none d-lg-block">
+            <div class="d-flex justify-content-end align-items-center">
+                <div class="me-3">
+                    <span class="fw-bold cus-nav-link me-3">Docs</span>
+                    <span class="fw-bold cus-nav-link">Component</span>
+                </div>
+                <div class="">
+                    <i class="fab fa-github fs-5"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown-divider d-lg-none"></div>
+    <div class="d-block d-lg-none">
+        <i class="fas fa-bars sidebar-control"></i>
+        <nav class="d-inline-block small" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb ms-3 mb-0">
+                <li class="breadcrumb-item"><a class="text-decoration-none pdf-text-neutral-500" href="#">Customization</a></li>
+                <li class="breadcrumb-item fw-bold pdf-text-neutral-900 active" aria-current="page">Customizing Colors</li>
+            </ol>
+        </nav>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-lg-11">
+            <div class="d-flex">
+                <div class="s-backdrop fade d-lg-none"></div>
+                <sidebar class="sidebar">
+                    <div class="ps-0 p-3 pt-0 mb-3 position-sticky search d-none d-lg-block">
+                        <input type="text" class="form-control pdf-rounded-lg" placeholder="Quick Search">
+                    </div>
+                    <div class="">
+                        <ul class="list-group">
+                            <li class="list-group-item sidebar-link ps-3 ps-lg-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <div class="sidebar-link-icon border me-2">
+                                            <i class="fas fa-home small fa-fw"></i>
+                                        </div>
+                                        <span class="sidebar-link-header active">Documentation</span>
+                                    </div>
+                                    <i class="fas fa-times sidebar-close d-block d-lg-none"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item sidebar-link ps-3 ps-lg-0">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="sidebar-link-icon border me-2">
+                                        <i class="fas fa-dot-circle small fa-fw pdf-text-green-400"></i>
+                                    </div>
+                                    <span class="sidebar-link-header">Resources</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item sidebar-link ps-3 ps-lg-0">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="sidebar-link-icon border me-2">
+                                        <i class="fas fa-envelope small fa-fw pdf-text-indigo-500"></i>
+                                    </div>
+                                    <span class="sidebar-link-header">Community</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--Accordion-->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item mb-2">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="fw-bold accordion-button collapsed ps-3 ps-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Getting Started
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body ps-3 ps-lg-0">
+                                        <ul class="list-group border-start rounded-0">
+                                            <div class="list-group">
+                                                <a href="installation.html" class="list-group-item active">installation</a>
+                                                <a href="#" class="list-group-item">Upgraded Guide</a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-2">
+                                <h2 class="accordion-header" id="flush-heading-1">
+                                    <button class="fw-bold accordion-button collapsed ps-3 ps-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapse-1">
+                                        Backgrounds
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse-1" class="accordion-collapse collapse" aria-labelledby="flush-heading-1" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body ps-3 ps-lg-0">
+                                        <ul class="list-group border-start rounded-0">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Background Color</li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-2">
+                                <h2 class="accordion-header" id="flush-heading-2">
+                                    <button class="fw-bold accordion-button collapsed ps-3 ps-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2">
+                                        Borders
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body ps-3 ps-lg-0">
+                                        <ul class="list-group border-start rounded-0">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Border Color</li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sidebar>
+                <main class="main">
+                    <div class="row pt-4">
+                        <div class="col-lg-12">
+                            <div class="ps-lg-4">
+                                <div class="mb-5">
+                                    <h6 class="pdf-text-cyan-500">Installation</h6>
+                                    <h2 class="fw-bolder">Get started with Color Myar</h2>
+                                    <p>
+                                        Customizing the default color palette for your project.
+                                    </p>
+                                    <p>
+                                        Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
+                                    </p>
+                                </div>
+
+                                <!-- Get start Code Example-->
+                                <div class="mb-4">
+                                    <h5 class="">Using npm</h5>
+                                    <pre class=""><code class="language-html pdf-rounded-lg">npm i colormyar</code></pre>
+                                </div>
+                                <div class="mb-4">
+                                    <h5 class="">Download</h5>
+                                    <a class="btn btn-primary" href="https://github.com/sanlinhtik3/colormyar/archive/refs/heads/main.zip">Download Source</a>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5 class="">Start using Tailwind in your HTML</h5>
+                                    <pre><code class="language-html pdf-rounded-lg">&#x3C;!doctype html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22;
+          content=&#x22;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&#x22;&#x3E;
+    &#x3C;meta http-equiv=&#x22;X-UA-Compatible&#x22; content=&#x22;ie=edge&#x22;&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;path/css/pdf.css&#x22;&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;</code></pre>
+                                </div>
+
+
+                                <!-- End Code Example-->
+
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="right-main-docs d-none d-lg-block">
+                    <div class="position-sticky right-docs" style="top: 65px;">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">On this page</a>
+                            <div class="list-group ps-lg-2">
+                                <a href="#" class="list-group-item list-group-item-action py-1"><i class="fas fa-angle-right fa-fw me-1 small pdf-text-slat-400"></i>Color Object Syntax</a>
+                                <a href="#" class="list-group-item list-group-item-action py-1"><i class="fas fa-angle-right fa-fw me-1 small pdf-text-slat-400"></i>Arbitrary values</a>
+                                <a href="#" class="list-group-item list-group-item-action py-1"><i class="fas fa-angle-right fa-fw me-1 small pdf-text-slat-400"></i>Generating colors</a>
+                            </div>
+                            <a href="#" class="list-group-item list-group-item-action">Default color palette</a>
+                            <a href="#" class="list-group-item list-group-item-action">Using custom colors</a>
+                            <a href="#" class="list-group-item list-group-item-action">Using the default colors</a>
+                            <a class="list-group-item list-group-item-action disabled">Naming your colors</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="access/dist/js/cus.js"></script>
+<script>hljs.highlightAll();</script>
+
+</body>
+</html>
